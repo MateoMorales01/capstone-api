@@ -61,7 +61,7 @@ public class MySqlProfileDao extends MySqlDaoBase implements ProfileDao {
     }
 
     @Override
-    public Profile update(int userId, Profile profile) {
+    public void update(int userId, Profile profile) {
         String sql = "UPDATE profiles SET first_name = ?, last_name = ?, phone = ?, email = ?, " +
                 "address = ?, city = ?, state = ?, zip = ? WHERE user_id = ?";
 
@@ -82,7 +82,6 @@ public class MySqlProfileDao extends MySqlDaoBase implements ProfileDao {
         }catch (SQLException e){
             throw new RuntimeException(e);
         }
-        return null;
     }
 
 

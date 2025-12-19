@@ -28,7 +28,7 @@ public class ProfileController {
     @GetMapping
     public Profile getProfile(Principal principal) {
         User user = getCurrentUser(principal);
-        Profile profile = profileDao.getUserById(user.getId());
+        Profile profile = profileDao.getByUserId(user.getId());
         if (profile == null) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND);
         }
@@ -41,7 +41,7 @@ public class ProfileController {
 
         profileDao.update(user.getId(), profile);
 
-        return profileDao.getUserById(user.getId());
+        return profileDao.getByUserId(user.getId());
 
     }
 
