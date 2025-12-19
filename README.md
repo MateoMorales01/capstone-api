@@ -4,7 +4,7 @@
 EasyShop is a RESTful API backend for an e-commerce platform built with Spring Boot. It provides comprehensive functionality for managing an online store, including product catalog management, user authentication, shopping cart operations, and order processing.
 
 ## Technologies & Tools Used
-Backend Framework
+### Backend Framework
 
 Java 17
 
