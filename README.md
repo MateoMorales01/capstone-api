@@ -69,9 +69,13 @@ Delete categories
 4. ### Shopping Cart (In Development)
 
 View Cart - Display current user's shopping cart
+
 Add to Cart - Add products to shopping cart
+
 Update Cart - Modify product quantities
+
 Remove from Cart - Delete items from cart
+
 Cart Total - Calculate total cost with discounts
 
 
